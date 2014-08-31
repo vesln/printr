@@ -1,7 +1,7 @@
 {
   "name": "printr",
   "description": "Print utils",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "main": "lib/printr.js",
   "homepage": "https://github.com/vesln/printr",
   "bugs": "https://github.com/vesln/printr/issues",
