@@ -8,6 +8,40 @@ version](https://img.shields.io/npm/v/printr.svg?style=flat-square)](https://www
 
 ## Usage
 
+```js
+var Printr = require('printr');
+
+var printr new Printr({
+  out: process.stdout, // out stream, default
+  err: process.stderr, // err stream, default
+  prefix: ' woot: ',   // prefix, default: ''
+});
+
+printr.error.print('Hello');
+printr.error.println('Hello');
+printr.error.write('H');
+printr.error.write('i');
+
+printr.out.print('Hi');
+printr.out.println('Hi');
+printr.out.write('H');
+printr.out.write('i');
+```
+
+stderr:
+```
+Hello\n
+Hello\n
+Hi
+```
+
+stdout:
+```
+Hi\n
+Hi\n
+Hi
+```
+
 ## Tests
 
 ```
