@@ -14,7 +14,7 @@ var Printr = require('printr');
 var printr new Printr({
   out: process.stdout, // out stream, default
   err: process.stderr, // err stream, default
-  prefix: '[test]: ',   // prefix, default: ''
+  prefix: '-test-: ',   // prefix, default: ''
 });
 
 printr.error.print('Hello');
@@ -30,15 +30,15 @@ printr.out.write('i');
 
 stderr:
 ```
-[test]: Hello\n
-[test]: Hello\n
+-test-: Hello\n
+-test-: Hello\n
 Hi
 ```
 
 stdout:
 ```
-[test]: Hi\n
-[test]: Hi\n
+-test-: Hi\n
+-test-: Hi\n
 Hi
 ```
 
